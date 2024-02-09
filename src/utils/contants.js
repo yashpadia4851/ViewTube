@@ -1,4 +1,4 @@
-const MY_GOOGLE_API_KEY = process.env.REACT_APP_KEY ;
+const MY_GOOGLE_API_KEY = process.env.REACT_APP_KEY;
 
 export const YOUTUBE_VIDEOS_API =
   "https://youtube.googleapis.com/youtube/v3/videos?part=snippet%2CcontentDetails%2Cstatistics&chart=mostPopular&maxResults=50&regionCode=IN&key=" +
@@ -15,4 +15,5 @@ export const CHAT_USER_IMAGE =
 
 export const LIVE_CHAT_COUNT = 25;
 
-export const COMMENTS_IMAGE = "https://pluginicons.craft-cdn.com/commentscvQGFyYIVV53CsHK33dTFFHFFgXnYd9dm0OF.svg?1535165130"
+export const COMMENTS_IMAGE =
+  "https://pluginicons.craft-cdn.com/commentscvQGFyYIVV53CsHK33dTFFHFFgXnYd9dm0OF.svg?1535165130";
