@@ -8,9 +8,7 @@ import MainContainer from "./components/MainContainer";
 import WatchPage from "./components/WatchPage";
 import { Suspense, lazy } from "react";
 
-
-const SearchResults = lazy(() => import("./components/SearchResults") ) 
-
+const SearchResults = lazy(() => import("./components/SearchResults"));
 
 export const appRouter = createBrowserRouter([
   {
@@ -37,7 +35,6 @@ export const appRouter = createBrowserRouter([
   },
 ]);
 function App() {
-  
   return (
     <Provider store={store}>
       <div className="App bg-[#0F0F0F] text-[#FFFFFF] h-[100%]">
@@ -45,7 +42,6 @@ function App() {
         <RouterProvider router={appRouter} />
       </div>
     </Provider>
-    
   );
 }
 

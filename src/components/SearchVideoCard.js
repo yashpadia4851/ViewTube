@@ -2,6 +2,7 @@ import React from "react";
 
 const SearchVideoCard = ({ info }) => {
   const { channelTitle, thumbnails, title } = info?.snippet;
+  // console.log(info);
   return (
     <div className="flex w-56 flex-col md:flex-row md:w-full  ">
       <img
@@ -11,7 +12,7 @@ const SearchVideoCard = ({ info }) => {
       />
       <ul className="flex flex-col justify-between flex-wrap">
         <li className="font-bold py-2">{title}</li>
-        <li className="text-gray-800 text-sm flex items-center font-medium">
+        <li className="text-gray-200 text-sm flex items-center font-medium">
           <img
             alt="thumbnail"
             className="mr-3 h-7 w-7 rounded-full "
