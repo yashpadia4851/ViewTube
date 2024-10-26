@@ -27,8 +27,8 @@ const SearchResults = () => {
       {videos.map((video) => (
         <Link
           className="m-2 p-2 mr-2 shadow-lg rounded-lg"
-          key={video.id.videoId}
-          to={"/watch?v=" + video.id.videoId}
+          key={video?.id?.videoId}
+          to={"/watch?v=" + video?.id?.videoId}
         >
           <SearchVideoCard info={video} />
         </Link>

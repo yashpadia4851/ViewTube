@@ -176,7 +176,7 @@ const daysAgoText = absoluteDaysAgo === 1
             <div className="flex flex-col shadow-lg">
               {suggestionVideos.map((video) => (
                 <Link
-                  to={"/watch?v=" + video.id}
+                  to={"/watch?v=" + video?.id}
                   className="my-2 p-1 w-full"
                   key={video.id}
                 >

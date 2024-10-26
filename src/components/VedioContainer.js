@@ -13,14 +13,14 @@ const VedioContainer = () => {
   ) : (
     <>
       <div className="flex justify-center flex-wrap max-w-screen-2xl">
-        {videos.map((video) => {
+        {videos?.map((video) => {
           return (
             <Link
               className=" hover:shadow-[0_0_5px_0_gray] w-64 h-64 m-2 p-2 mr-2 shadow-lg rounded-lg"
               to={"/watch?v=" + video.id}
               key={video.id}
             >
-              {video.statistics.likeCount > 20000 ? (
+              {video?.statistics?.likeCount > 20000 ? (
                 <HighLikesCard info={video} />
               ) : (
                 <VedioCards info={video} />
